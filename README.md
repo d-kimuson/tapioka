@@ -1,5 +1,7 @@
 # tapioka
 
+自動取引でお金持ちになりたいな〜
+
 ## 必要ツール
 
 - [Yarn](https://yarnpkg.com/getting-started/install)
