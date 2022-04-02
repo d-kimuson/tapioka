@@ -1,0 +1,29 @@
+{
+  "name": "tapioka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:d-kimuson/tapioka.git",
+  "author": "d-kimsuon <d-kimuson@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "run-s lint:*",
+    "lint:flake8": "poetry run flake8 --show-source src",
+    "lint:black": "poetry run black --check src",
+    "lint:prettier": "prettier './**/*.{js,ts,json,md,toml,yaml}' --check",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier './**/*.{js,ts,json,md,toml,yaml}' --write",
+    "fix:black": "poetry run black src",
+    "prepare": "run-s prepare:*",
+    "prepare:husky": "husky install",
+    "prepare:poetry": "poetry install",
+    "prepare:gitconf": "git config core.ignorecase false && git config --global --add merge.ff false"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.1",
+    "prettier-plugin-toml": "^0.3.1"
+  }
+}
