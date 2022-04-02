@@ -6,6 +6,7 @@
   "author": "d-kimsuon <d-kimuson@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "r": "poetry run python",
     "typecheck": "poetry run mypy src",
     "lint": "run-s lint:*",
     "lint:flake8": "poetry run flake8 --show-source src",
