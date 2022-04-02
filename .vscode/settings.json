@@ -1,0 +1,40 @@
+{
+  // flake8 linter
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "./.venv/bin/flake8",
+  // mypy typecheck
+  "python.linting.mypyEnabled": false,
+  "python.analysis.typeCheckingMode": "off",
+  "mypy.configFile": "./mypy.ini",
+  "mypy.dmypyExecutable": "${workspaceFolder}/.venv/bin/dmypy",
+  // black formatter
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "./.venv/bin/black",
+  // prettier formatter
+  "prettier.configPath": "./.prettierrc.js",
+  "prettier.enableDebugLogs": true,
+  // format on save
+  "[javascript, typescript, json, jsonc, markdown, toml, yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": null
+  },
+  // spell checker
+  "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
+  "cSpell.words": [
+    "gitconf",
+    "ignorecase",
+    "kimsuon",
+    "kimuson",
+    "mypy",
+    "pyenv",
+    "tapioka",
+    "typecheck"
+  ]
+}
