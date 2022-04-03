@@ -1,2 +1,5 @@
+from projects.sin.runners.lstm import LSTMRunner
+
 if __name__ == "__main__":
-    print("Hello World!")
+    runner = LSTMRunner()
+    runner.run()

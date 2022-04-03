@@ -1,13 +1,16 @@
 {
+  "python.defaultInterpreterPath": "./.venv/bin/python",
   // flake8 linter
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "./.venv/bin/flake8",
+  "python.linting.flake8Args": ["--config", "pyproject.toml"],
   // mypy typecheck
   "python.linting.mypyEnabled": false,
   "python.analysis.typeCheckingMode": "off",
-  "mypy.configFile": "./mypy.ini",
+  "mypy.configFile": "mypy.ini",
   "mypy.dmypyExecutable": "${workspaceFolder}/.venv/bin/dmypy",
+  "mypy.targets": ["src"],
   // black formatter
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "./.venv/bin/black",
@@ -28,12 +31,19 @@
   // spell checker
   "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
   "cSpell.words": [
+    "cuda",
+    "cudnn",
     "gitconf",
     "ignorecase",
     "kimsuon",
     "kimuson",
+    "LSTM",
     "mypy",
+    "optim",
     "pyenv",
+    "pyplot",
+    "pyproject",
+    "sklearn",
     "tapioka",
     "typecheck"
   ]

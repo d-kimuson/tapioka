@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "r": "poetry run python",
-    "typecheck": "poetry run mypy src",
+    "typecheck": "poetry run mypy --config-file ./mypy.ini src",
     "lint": "run-s lint:*",
-    "lint:flake8": "poetry run flake8 --show-source src",
+    "lint:flake8": "poetry run flake8 --show-source --config ./pyproject.toml src",
     "lint:black": "poetry run black --check src",
     "lint:prettier": "prettier './**/*.{js,ts,json,md,toml,yaml}' --check",
     "fix": "run-s fix:*",
